@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bgclr-header-footer: #1F2937;
+    --bgclr-quote: #E5E7EB;
+    --clr-primary-text: #F9FAF8;
+    --clr-secondary-text: #E5E7EB;
+    --clr-info-header-text: #1F2937;
+    --clr-quote-text: #1F2937;
+
+
+    --fs-48px: 3rem;
+    --fs-18px: 1.125rem;
+    --fs-24px: 1.5rem;
+    --fs-36px: 2.25rem;
+
+    --fw-900: 900;
+
+    --btn-bgclr: #3882F6;
+    --cta-bgclr: #3882F6;
+    --imgclr: #3882F6;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-secondary-text);
+}
+
+:where(header, footer) {
+    background-color: var(--bgclr-header-footer);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-container {
+    padding: 20px 300px;
+}
+
+/* Header Style */
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--fs-24px);
+    margin-bottom: 100px;
+}
+
+.header-left-side {
+    display: flex;
+    align-items: center;
+    color: var(--clr-primary-text);
+    gap: 16px;
+}
+
+.header-left-side > img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.header-left-side > p {
+    font-size: var(--fs-24px);
+    font-weight: var(--fw-900);
+}
+
+.header-right-side {
+    display: flex;
+    align-items: center;
+    color: var(--clr-secondary-text);
+    font-size: var(--fs-18px);
+}
+
+/* Hero Style */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 100px;
+}
+
+
+.hero-left-side {
+    max-width: 500px;
+}
+
+.hero-left-side > h1 {
+    color: var(--clr-primary-text);
+    font-size: var(--fs-48px);
+}
+
+.hero-left-side > p {
+    color: var(--clr-secondary-text);
+    font-size: var(--fs-18px);
+    line-height: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.hero-left-side > button {
+    border: none;
+    border-radius: 8px;
+    padding: 8px 30px;
+    font-size: var(--fs-18px);
+    font-weight: var(--fw-900);
+    color: white;
+    background-color: var(--btn-bgclr);
+}
+
+.hero-left-side > button:hover {
+    cursor: pointer;
+}
+
+
+.hero-right-side > img {
+    height: 330px;
+    width: 500px;
+    object-fit: cover;
+}
+
+/* Main Content Style */
+
+/* Section 1 */
+
+.container1 {
+    margin-bottom: 100px;
+}
+
+.container1 > h2 {
+    text-align: center;
+    padding: 50px;
+    font-size: var(--fs-36px);
+    font-weight: var(--fw-900);
+    color: var(--clr-info-header-text);
+}
+
+.wrapper1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+.info > img {
+    height: 200px;
+    width: 200px;
+    border: 4px solid var(--imgclr);
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.info > p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Section 2 */
+
+.container2 {
+    background-color: var(--bgclr-quote);
+}
+
+.wrapper2 {
+    padding: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper2 > .quote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--clr-quote-text);
+    font-size: var(--fs-36px);
+    font-weight: 300;
+    font-style: italic;
+}
+
+.author-text {
+    display: flex;
+    margin-top: 150px;
+    align-items: flex-end;
+    font-weight: 700;
+}
+
+/* Section 3 */
+
+.container3 {
+    padding: 150px 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper3 {
+    max-width: 1500px;
+    padding: 50px 150px;
+    background-color: var(--cta-bgclr);
+    border-radius: 10px;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.CTA-left-side > h2 {
+    color: var(--clr-primary-text);
+}
+
+.CTA-left-side > p {
+    color: var(--clr-secondary-text);
+}
+
+.CTA-right-side {
+    display: flex;
+    align-items: center;
+}
+
+.CTA-right-side > button {
+    border: 2px solid var(--clr-primary-text);
+    border-radius: 5px;
+    background-color: var(--btn-bgclr);
+    color: var(--clr-primary-text);
+    font-size: var(--fs-18px);
+    font-weight: var(--fw-900);
+    padding: 10px 40px;
+}
+
+.CTA-right-side > button:hover {
+    cursor: pointer;
+}
+
+
+/* Footer Style */
+
+.container4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 25px;
+}
+
+
+
