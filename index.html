@@ -4,27 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <div class="hero-container">
         <div class="header">
-          <img
-            class="left-side-img"
-            src="./assets/Vintage Vehicles.png"
-            alt="Vintage Vechile Logo" />
-          <div class="right-side">
+          <div class="header-left-side">
+            <img src="./assets/Vintage Vehicles.png" alt="Vintage Vechile Logo" />
+            <p>Vintage Vehicles</p>
+          </div>
+
+          <div class="header-right-side">
             <ul>
-              <li>About</li>
-              <li>Vehicles</li>
-              <li>Sign In</li>
+              <li><a href="#">Vehicles</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Sign In</a></li>
             </ul>
           </div>
         </div>
         <div class="hero">
           <div class="hero-left-side">
-            <h1 class="main-title">Welcome to Vintage Vehicles</h1>
-            <p class="main-description">
+            <h1>Welcome to Vintage Vehicles</h1>
+            <p>
               Vintage vehicles are defined by RA 11698 as motor vehicles that is at least 40 years
               old from the official date of manufacturing. A vintage vehicle&apos;s general
               appearance must not have been altered, and its chassis, engine, steering assembly, and
@@ -41,7 +44,7 @@
 
     <main>
       <section class="container1">
-        <h2>Information about Vintage Vehicles</h2>
+        <h2>Examples about Vintage Vehicles</h2>
         <div class="wrapper1">
           <div class="info">
             <img src="./assets/image1.jpg" alt="a vintage motorcycle" />
@@ -57,15 +60,17 @@
           </div>
           <div class="info">
             <img src="./assets/image4.jpg" alt="a vintage old fashioned jeep" />
-            <p>A vintage old fashioned jeep</p>
+            <p>A vintage muscle car</p>
           </div>
         </div>
       </section>
 
       <section class="container2">
         <div class="wrapper2">
-          <p>Quality never goes out of style.</p>
-          <p>-Unknown</p>
+          <p class="quote">Quality never goes out of style.</p>
+          <div class="author-text">
+            <p>- Unknown</p>
+          </div>
         </div>
       </section>
 
@@ -75,15 +80,15 @@
             <h2>Call to action! It's time!</h2>
             <p>Sign up for our product by clicking that button right over there!</p>
           </div>
-          <button class="CTA-sign-up-button">Sign up</button>
+          <div class="CTA-right-side">
+            <button class="CTA-sign-up-button">Sign up</button>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="container4">
-      <div class="wrapper4">
-        <p>Copyright © The Odin Project 2021</p>
-      </div>
+      <p>Copyright © The Odin Project 2021</p>
     </footer>
   </body>
 </html>
