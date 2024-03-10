@@ -1,6 +1,6 @@
 # landing-page
 
-From The Odin Project
+From The Odin Project using Flex Box
 
 # About
 
