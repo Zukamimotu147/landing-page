@@ -8,4 +8,4 @@ From The Odin Project using Flex Box
 
 # link
 
-(to be provided when finish)
+https://zukamimotu147.github.io/landing-page/
