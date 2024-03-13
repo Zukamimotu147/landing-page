@@ -57,7 +57,8 @@ header {
 }
 
 .hero-container {
-    padding: 20px 300px;
+    margin-top: 20px;
+    background-color: var(--bgclr-header-footer);
 }
 
 /* Header Style */
@@ -209,19 +210,20 @@ header {
 /* Section 3 */
 
 .container3 {
-    padding: 150px 300px;
+    margin: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .wrapper3 {
-    max-width: 1500px;
     padding: 50px 150px;
     background-color: var(--cta-bgclr);
     border-radius: 10px;
     display: flex;
+    flex-wrap: wrap;
     flex: 1;
+    max-width: 1500px;
     justify-content: space-between;
 }
 
@@ -256,6 +258,10 @@ header {
 /* Footer Style */
 
 .container4 {
+    background-color: var(--bgclr-header-footer);
+}
+
+.footer {
     display: flex;
     justify-content: center;
     align-items: center;
